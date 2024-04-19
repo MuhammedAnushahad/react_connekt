@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="author" content="zytheme"/>
+      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta
+        name="description"
+        content="Multi-purpose Business html5 landing page"
+      />
+      <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+      <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      <link href='http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800' rel='stylesheet' type='text/css'>
+  
+    <link href="assets/css/external.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- <link href="assets/less/module/header.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="assets/less/module/header.less"> -->
+
+
+    <!-- <link href="assets/css/library/animate.min.css" rel="stylesheet">
+    <link href="assets/css/library/jquery.mb.YTPlayer.min.css" rel="stylesheet">
+    <link href="assets/css/library/stroke-gap-icons.css" rel="stylesheet"> -->
+      <title>Connekt Plus</title>
+    </head>    
+  <body>
+    <div id="root"></div>
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <!-- <script src="assets/js/plugins/bootstrap.js"></script>
+    <script src="assets/js/plugins/owl.carousel.js"></script>
+    <script src="assets/js/plugins/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/less.js" ></script>
+    <script src="assets/js/respond.min.js"></script> -->
+
+    <script  type="text/javascript">
+      $(document).ready(function() {
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 10) {
+         $('.navbar-fixed-top').addClass('affix');
+      } else {
+         $('.navbar-fixed-top').removeClass('affix');
+      }
+  });
+});
+    </script>
+
+
+   <script type="text/javascript">
+$(window).scroll(function() {
+		var windscroll = $(window).scrollTop();
+		if (windscroll >= 10) {
+			$('section').each(function(i) {
+				if ($(this).position().top <= windscroll - 0) {
+					$('nav li.active').removeClass('active');
+					$('nav li').eq(i).addClass('active');
+				}
+			});
+
+		} else {
+
+			$('nav li.active').removeClass('active');
+			$('nav li:first').addClass('active');
+		}
+
+		}).scroll();
+</script>
+
+<!-- <script type="text/javascript">
+$('.btn-navbar').addClass('collapsed');
+$('.nav-collapse').removeClass('in').css('height', '0');
+  </script> -->
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.feature-panel .feature--content p{
+    padding-left: 0 !important;
+    margin-bottom: 10px;
+}
+.feature-panel .feature--content h3{
+    margin-top: 10px;
+}
+section{
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+.header{
+    padding: 20px 15px;
+}
